@@ -1,4 +1,6 @@
 import CardOne from "@/components/cards/CardOne";
+import CardTwo from "@/components/cards/CardTwo";
+import JiraTicket from "@/components/cards/JiraTicket";
 import {
   Box,
   Button,
@@ -7,18 +9,17 @@ import {
   TextInput,
   Typography,
   Pill,
+  Avatar
 } from "@mantine/core";
 
 export default function Home() {
   return (
-    <div className="flex gap-2 mt-2">
+    // <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-5 gap-2">
+    <div className="flex flex-wrap gap-2">
       <CardOne></CardOne>
-      <div>
-        <Typography> Header 1</Typography>
-        <Typography>Small Description Description</Typography>
-        <Typography>Rs. 500</Typography>
-        <Typography>Unisex</Typography>
-      </div>
+      <JiraTicket></JiraTicket>
+
+      {/* <CardTwo></CardTwo> */}
     </div>
   );
 }
