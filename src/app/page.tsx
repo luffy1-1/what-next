@@ -1,6 +1,7 @@
 import CardOne from "@/components/cards/CardOne";
 import CardTwo from "@/components/cards/CardTwo";
 import JiraTicket from "@/components/cards/JiraTicket";
+import ProgressCard from "@/components/cards/ProgressCard";
 import {
   Box,
   Button,
@@ -9,8 +10,10 @@ import {
   TextInput,
   Typography,
   Pill,
-  Avatar
+  Avatar,
+  Progress,
 } from "@mantine/core";
+import { BookOpenText, Upload } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,8 +21,7 @@ export default function Home() {
     <div className="flex flex-wrap gap-2">
       <CardOne></CardOne>
       <JiraTicket></JiraTicket>
-
-      {/* <CardTwo></CardTwo> */}
+      <ProgressCard/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import {
   Pill,
   Avatar,
 } from "@mantine/core";
-import { BookmarkPlus } from "lucide-react";
+import { Bookmark } from "lucide-react";
 
 export default function JiraTicket() {
   return (
@@ -11,8 +11,10 @@ export default function JiraTicket() {
       <Typography className="text-lg font-bold">Migrate Flash Pages</Typography>
       <Pill className="mt-2">Story/Epic 1</Pill>
       <div className="flex justify-between mt-8">
-        <BookmarkPlus />
-        <Typography className="text-sm">CIT-230</Typography>
+        <div className="flex">
+          <Bookmark />
+          <Typography className="text-sm">CIT-230</Typography>
+        </div>
         <Avatar color={"blue"}>AB</Avatar>
       </div>
     </div>
