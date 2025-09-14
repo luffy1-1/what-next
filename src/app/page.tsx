@@ -1,4 +1,5 @@
 import CardOne from "@/components/cards/CardOne";
+import GradientCard from "@/components/cards/GradientCard";
 import JiraTicket from "@/components/cards/JiraTicket";
 import ProgressCard from "@/components/cards/ProgressCard";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <CardOne></CardOne>
       <JiraTicket></JiraTicket>
       <ProgressCard/>
+      <GradientCard/>
     </div>
   );
 }
